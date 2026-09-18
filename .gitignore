@@ -1,0 +1,21 @@
+# Harness-managed (never commit)
+hive/
+roster.json
+roster-backups/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build output & caches
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+.vite/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
