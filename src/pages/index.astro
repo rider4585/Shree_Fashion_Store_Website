@@ -1,6 +1,7 @@
 ---
 import { Picture } from "astro:assets";
 import logoImg from "../assets/Shree_Logo_website.png";
+import logoIcon from "../assets/logo.svg?url&no-inline";
 import "../styles/global.css";
 
 const SHOP_NAME = "Shree Fashion Store";
@@ -23,7 +24,7 @@ const year = new Date().getFullYear();
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href={logoIcon} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0D0B09" />
     <title>Shree Fashion Store — Wear It. Rent It. Own It.</title>
