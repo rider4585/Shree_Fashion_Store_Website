@@ -1,0 +1,177 @@
+---
+import "../styles/global.css";
+
+const SHOP_NAME = "Shree Fashion Store";
+const FOUNDER = "@shravanibugge";
+const LOGO_URL = "/assets/Shree_Logo_website.png";
+
+const INSTAGRAM_URL = "https://instagram.com/shree_fashionstore31";
+const INSTAGRAM_HANDLE = "@shree_fashionstore31";
+const WHATSAPP_URL = "https://wa.me/917030769731";
+const WHATSAPP_LABEL = "+91 70307 69731";
+const MAPS_URL = "https://share.google/8se8HJa4ilQ29wwJP";
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0D0B09" />
+    <title>Shree Fashion Store — Wear It. Rent It. Own It.</title>
+    <meta
+      name="description"
+      content="Where tradition meets fashion. Shree Fashion Store — a retail & rental fashion house — is opening soon. Wear It. Rent It. Own It. Follow us on Instagram and WhatsApp for launch updates."
+    />
+    <meta property="og:title" content="Shree Fashion Store — Coming Soon" />
+    <meta
+      property="og:description"
+      content="Where tradition meets fashion. A retail & rental fashion house opening soon. Wear It. Rent It. Own It."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="relative min-h-screen overflow-hidden bg-background">
+      <!-- Ambient background: rose-gold glows + subtle grain -->
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-40 left-1/2 h-[28rem] w-[46rem] -translate-x-1/2 rounded-full bg-accent/10 blur-3xl"></div>
+        <div class="absolute -bottom-48 left-1/4 h-80 w-[30rem] rounded-full bg-[#c97e5e]/10 blur-3xl"></div>
+        <div class="absolute inset-0 bg-grain opacity-50"></div>
+      </div>
+
+      <main class="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-8 sm:px-8">
+        <!-- Header -->
+        <header class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <img src={LOGO_URL} alt="" class="h-9 w-auto mix-blend-screen" />
+            <span class="text-sm font-semibold tracking-tight">{SHOP_NAME}</span>
+          </div>
+          <span class="rounded-full border border-accent/30 bg-accent/10 px-3.5 py-1.5 text-xs font-medium tracking-wide text-accent backdrop-blur-sm">
+            Opening Soon
+          </span>
+        </header>
+
+        <!-- Hero -->
+        <div class="flex flex-1 flex-col items-center justify-center py-16 text-center sm:py-20">
+          <div class="fade-up delay-0 relative mx-auto">
+            <div class="absolute inset-0 -z-10 scale-125 rounded-full bg-accent/20 blur-3xl"></div>
+            <img
+              src={LOGO_URL}
+              alt="Shree Fashion Store lotus logo"
+              class="h-36 w-auto mix-blend-screen sm:h-48"
+            />
+          </div>
+
+          <p class="fade-up delay-1 mt-10 text-xs font-semibold uppercase tracking-[0.32em] text-accent">
+            Where tradition meets fashion
+          </p>
+
+          <h1 class="fade-up delay-1 mt-5 max-w-3xl font-display text-5xl font-light leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+            Shree Fashion <span class="text-goldgrad font-normal">Store</span>
+          </h1>
+
+          <!-- Tagline -->
+          <p class="fade-up delay-2 mt-7 font-display text-2xl font-light tracking-wide text-foreground sm:text-3xl">
+            &ldquo;Wear It. <span class="text-goldgrad">Rent It. Own It.</span>&rdquo;
+          </p>
+
+          <p class="fade-up delay-2 mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            A retail &amp; rental fashion house is getting ready &mdash; ethnic and
+            contemporary looks for every occasion. Follow along and be the first
+            to know when we open our doors.
+          </p>
+
+          <!-- Link cards -->
+          <div class="fade-up delay-4 mt-12 grid w-full max-w-md gap-3">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-card group flex items-center gap-4 rounded-2xl border border-foreground/8 bg-card/60 p-4 text-left backdrop-blur-sm shadow-layered hover:border-accent/40"
+            >
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col justify-center">
+                <span class="block text-sm font-semibold leading-tight tracking-tight">Instagram</span>
+                <span class="mt-0.5 block truncate text-xs leading-snug text-muted-foreground">{INSTAGRAM_HANDLE}</span>
+              </span>
+              <svg viewBox="0 0 16 16" class="h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-all group-hover:translate-x-0.5 group-hover:text-accent" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-card group flex items-center gap-4 rounded-2xl border border-foreground/8 bg-card/60 p-4 text-left backdrop-blur-sm shadow-layered hover:border-accent/40"
+            >
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                </svg>
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col justify-center">
+                <span class="block text-sm font-semibold leading-tight tracking-tight">WhatsApp</span>
+                <span class="mt-0.5 block truncate text-xs leading-snug text-muted-foreground">{WHATSAPP_LABEL}</span>
+              </span>
+              <svg viewBox="0 0 16 16" class="h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-all group-hover:translate-x-0.5 group-hover:text-accent" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a
+              href={MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-card group flex items-center gap-4 rounded-2xl border border-foreground/8 bg-card/60 p-4 text-left backdrop-blur-sm shadow-layered hover:border-accent/40"
+            >
+              <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <span class="flex min-w-0 flex-1 flex-col justify-center">
+                <span class="block text-sm font-semibold leading-tight tracking-tight">Find us on the map</span>
+                <span class="mt-0.5 block truncate text-xs leading-snug text-muted-foreground">Shree Fashion Store — directions</span>
+              </span>
+              <svg viewBox="0 0 16 16" class="h-3.5 w-3.5 shrink-0 text-muted-foreground/50 transition-all group-hover:translate-x-0.5 group-hover:text-accent" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="border-t border-foreground/8 pt-6 text-center">
+          <p class="text-xs text-muted-foreground">
+            © {year} {SHOP_NAME} · A new closet by{" "}
+            <a
+              href="https://instagram.com/shravanibugge"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-medium text-accent/90 transition-colors hover:text-accent"
+            >
+              {FOUNDER}
+            </a>
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
