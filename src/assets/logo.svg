@@ -1,0 +1,23 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lotusGold-g" x1="0" y1="256" x2="512" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stopColor="#EED7C4" />
+      <stop offset="0.28" stopColor="#F2E2D3" />
+      <stop offset="0.52" stopColor="#D9AC93" />
+      <stop offset="0.78" stopColor="#B87F63" />
+      <stop offset="1" stopColor="#A96F55" />
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#lotusGold-g)" fill="none" strokeLinejoin="round" strokeLinecap="round">
+    <path d="M28 386 C110 352 210 344 258 356 C252 396 210 436 128 452 C86 460 54 444 34 420 C24 408 22 396 28 386 Z" strokeWidth="15" />
+    <path d="M484 386 C402 352 302 344 254 356 C260 396 302 436 384 452 C426 460 458 444 478 420 C488 408 490 396 484 386 Z" strokeWidth="15" />
+    <path d="M56 300 C130 246 218 224 262 232 C262 280 232 336 172 372 C132 396 92 392 68 366 C54 348 50 322 56 300 Z" strokeWidth="15" />
+    <path d="M456 300 C382 246 294 224 250 232 C250 280 280 336 340 372 C380 396 420 392 444 366 C458 348 462 322 456 300 Z" strokeWidth="15" />
+    <path d="M108 214 C166 150 246 112 284 110 C292 160 274 232 228 284 C196 320 152 330 124 308 C108 286 102 246 108 214 Z" strokeWidth="15" />
+    <path d="M404 214 C346 150 266 112 228 110 C220 160 238 232 284 284 C316 320 360 330 388 308 C404 286 410 246 404 214 Z" strokeWidth="15" />
+    <path d="M256 40 C292 108 306 196 292 276 C285 316 272 346 256 364 C240 346 227 316 220 276 C206 196 220 108 256 40 Z" strokeWidth="15" />
+  </g>
+
+  <text x="256" y="345" textAnchor="middle" fill="url(#lotusGold-g)" fontSize="200" fontWeight="600" fontFamily="'Noto Sans Devanagari', 'Mangal', 'Nirmala UI', sans-serif">श्री</text>
+</svg>

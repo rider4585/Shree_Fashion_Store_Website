@@ -24,9 +24,10 @@
     "noUncheckedSideEffectImports": true,
     "noPropertyAccessFromIndexSignature": false,
     "baseUrl": ".",
+    "types": ["vite/client", "node"],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "vly-toolbar-readonly.tsx"]
+  "include": ["src"]
 }
