@@ -79,7 +79,7 @@ Loaded from Google Fonts (`index.astro` head): Fraunces (opsz 9..144, wght 300/4
 ### The hero heading (current decision, 2026-09-19)
 - "Shree Fashion Store" renders in **Source Serif 4 at Light (300)** via `font-hero`. Rationale chosen over Times New Roman: **TNR has no thin/light weight** (only 400/700 — a `font-light` request silently renders at regular, which is why it looked thick). Source Serif 4 is a genuine thin, Times-flavored transitional serif (Adobe), with a system-safe fallback to `"Times New Roman", Times, serif` in case the webfont ever fails, so client devices never break.
 - **Size ladder (kept from the TNR bump — Source Serif 4 also runs smaller than Fraunces):** `text-6xl` (60px) → `sm:text-7xl` (72px) → `lg:text-8xl` (96px).
-- Weight/leading: `font-light` (300), `leading-[1.05]`, `tracking-tight`.
+- Weight/leading: `font-[350]` (a half-step between Light 300 and Regular 400 — Source Serif 4 is a variable font, so 350 interpolates; use `font-light` for 300 / `font-normal` for 400), `leading-[1.05]`, `tracking-tight`.
 - The word **"Store"** gets the gradient span: `text-goldgrad font-medium tracking-[0.01em]`.
 - Everything else on the page keeps Fraunces (`font-display`).
 
@@ -149,7 +149,7 @@ Current page has no filled CTA button (pill + link cards only). For future CTAs 
 
 | # | Decision | Status |
 |---|---|---|
-| 1 | Hero brand name → **Source Serif 4 (Light 300)**, `font-hero` utility, enlarged ladder text-6xl/7xl/8xl. (History: Fraunces → **Times New Roman** — declined because TNR has no thin weight and read too thick — → Source Serif 4.) | Applied |
+| 1 | Hero brand name → **Source Serif 4 at `font-[350]`** (half-step between Light 300 and Regular 400; history: Fraunces → **Times New Roman** — declined because TNR has no thin weight and read too thick — → Source Serif 4 Light 300, then bumped to 350), `font-hero` utility, enlarged ladder text-6xl/7xl/8xl. | Applied |
 | 2 | Favicon bundle (favicon.io) fully integrated under `public/` + branded webmanifest `#0D0B09` | Applied |
 | 3 | Hero entrance load pulse on lotus glow | Applied |
 | 4 | "Store" typography lift (gradient, font-medium, tracking [0.01em]) | Applied |
