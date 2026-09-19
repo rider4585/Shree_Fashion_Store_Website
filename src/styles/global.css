@@ -144,8 +144,9 @@
     .font-sans {
         font-family: var(--font-sans);
     }
-    .font-times {
-        font-family: "Times New Roman", Times, serif;
+    .font-hero {
+        font-family: "Source Serif 4", "Times New Roman", Times, serif;
+        font-optical-sizing: auto;
     }
     /* Soft layered elevation tuned for the dark base */
     .shadow-layered {

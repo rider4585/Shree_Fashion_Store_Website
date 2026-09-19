@@ -68,20 +68,20 @@ All colors are oklch tokens (Tailwind v4 `@theme inline`) in `:root` + `.dark` (
 
 ## 4. Typography
 
-Loaded from Google Fonts (`index.astro` head): Fraunces (opsz 9..144, wght 300/400/500/600) + Inter (300/400/500/600/700).
+Loaded from Google Fonts (`index.astro` head): Fraunces (opsz 9..144, wght 300/400/500/600) + Inter (300/400/500/600/700) + Source Serif 4 (opsz 8..60, wght 200/300/400). All subset woff2 via Google CDN — safe to load on client devices.
 
 | Utility | Font stack | Use |
 |---|---|---|
 | `font-sans` (default body) | `Inter, ui-sans-serif, system-ui, -apple-system, sans-serif` | body copy, labels, UI |
 | `font-display` | `Fraunces, Georgia, "Times New Roman", serif` (+ `font-optical-sizing: auto`) | kicker, tagline, countdown numerals, section display headings |
-| `font-times` | `"Times New Roman", Times, serif` | **Hero brand name only** ("Shree Fashion Store") |
+| `font-hero` | `"Source Serif 4", "Times New Roman", Times, serif` (+ `font-optical-sizing: auto`) | **Hero brand name only** ("Shree Fashion Store") |
 
 ### The hero heading (current decision, 2026-09-19)
-- "Shree Fashion Store" renders in **Times New Roman** via `font-times` (a CSS variant of the Fraunces display style).
-- **Size ladder (larger than Fraunces because TNR runs small):** `text-6xl` (60px) → `sm:text-7xl` (72px) → `lg:text-8xl` (96px).
-- Weight/leading: `font-light`, `leading-[1.05]`, `tracking-tight`.
+- "Shree Fashion Store" renders in **Source Serif 4 at Light (300)** via `font-hero`. Rationale chosen over Times New Roman: **TNR has no thin/light weight** (only 400/700 — a `font-light` request silently renders at regular, which is why it looked thick). Source Serif 4 is a genuine thin, Times-flavored transitional serif (Adobe), with a system-safe fallback to `"Times New Roman", Times, serif` in case the webfont ever fails, so client devices never break.
+- **Size ladder (kept from the TNR bump — Source Serif 4 also runs smaller than Fraunces):** `text-6xl` (60px) → `sm:text-7xl` (72px) → `lg:text-8xl` (96px).
+- Weight/leading: `font-light` (300), `leading-[1.05]`, `tracking-tight`.
 - The word **"Store"** gets the gradient span: `text-goldgrad font-medium tracking-[0.01em]`.
-- Everything else on the page keeps Fraunces (`font-display`). If the main site keeps this heading style, reuse `font-times` + this ladder.
+- Everything else on the page keeps Fraunces (`font-display`).
 
 ### Type scale / details currently in use
 - Kicker/eyebrow: `text-xs font-semibold uppercase tracking-[0.32em] text-accent`.
@@ -149,7 +149,7 @@ Current page has no filled CTA button (pill + link cards only). For future CTAs 
 
 | # | Decision | Status |
 |---|---|---|
-| 1 | Hero brand name → **Times New Roman** (`font-times`), enlarged ladder text-6xl/7xl/8xl | Applied |
+| 1 | Hero brand name → **Source Serif 4 (Light 300)**, `font-hero` utility, enlarged ladder text-6xl/7xl/8xl. (History: Fraunces → **Times New Roman** — declined because TNR has no thin weight and read too thick — → Source Serif 4.) | Applied |
 | 2 | Favicon bundle (favicon.io) fully integrated under `public/` + branded webmanifest `#0D0B09` | Applied |
 | 3 | Hero entrance load pulse on lotus glow | Applied |
 | 4 | "Store" typography lift (gradient, font-medium, tracking [0.01em]) | Applied |
