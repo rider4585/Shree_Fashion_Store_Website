@@ -144,6 +144,9 @@
     .font-sans {
         font-family: var(--font-sans);
     }
+    .font-times {
+        font-family: "Times New Roman", Times, serif;
+    }
     /* Soft layered elevation tuned for the dark base */
     .shadow-layered {
         box-shadow:
