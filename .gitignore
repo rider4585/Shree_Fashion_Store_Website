@@ -16,6 +16,11 @@ dist-ssr/
 .vite/
 .astro/
 
+# npm transient junk (created at repo root on install)
+_cacache/
+_logs/
+_update-notifier-last-checked
+
 # Editor / OS
 .idea/
 .vscode/
